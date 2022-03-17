@@ -1,14 +1,20 @@
-body{
+body {
     font-family: Arial, sans-serif;
 }
 
-nav{
+nav {
+    float: left;
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 
-.logo{
+h2{
+    transform: scale(1);
+}
+
+.logo {
     color: #fff;
     font-size: 28px;
     line-height: 60px;
@@ -16,84 +22,106 @@ nav{
     float: left;
 }
 
-.menu{
+.menu {
     float: left;
     padding-left: 400px;
 }
-.menu li{
+
+
+.menu li {
     float: left;
     line-height: 60px;
-    color: #fff;
     margin-right: 39px;
+    color: #fff;
     font-size: 16px;
     text-transform: uppercase;
 }
-.main{
-   
+
+.main {
+
     padding-bottom: 500px;
-    width; 100%;
-    height: calc(100% - 60px);
-    background: url(../img/logoCSS.png) 100% 10%/ auto 70% no-repeat,url(../img/logoHtml.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background: url(../img/logoCSS.png) 100% 15%/ auto 70% no-repeat, url(../img/logoHtml.jpg) 0 20% no-repeat;
 }
-.ttl_cont{
+
+.ttl_cont {
     float: left;
-    margin:  432px 0 0 500px;
+    margin: 432px 0 0 500px;
     color: darkslateblue;
     text-align: center;
 
 }
+
 .ttl_cont h1 {
     font-size: 60px;
     font-weight: bold;
 }
-.ttl_cont h4{
+
+.ttl_cont h4 {
     margin-top: 40px;
     font-size: 25px;
-    color:  #79818d;
+    color: #79818d;
 }
-.ttl_cont input{
+
+.ttl_cont input {
     height: 40px;
+    width: 150px;
     text-align: center;
-    margin-right: 45px;
+    margin-left: 80px;
+    margin-right: 40px;
     border: 1px solid #6d7682;
+    padding: 5px 10px;
     margin-top: 55px;
     border-radius: 5px;
     color: #6d7682;
+    background-color: white;
+    transform: scale(1);
 }
-.second{
+
+.second {
     float: left;
     text-align: center;
 }
-.second h2{
+
+.second h2 {
     font-size: 20px;
     text-align: center;
     margin-top: 110px;
     padding-bottom: 30px;
+    border-bottom: 2px;
+    border-bottom-color: black;
     text-decoration: 4px #d17700 underline;
     text-transform: uppercase;
     font-weight: bold;
     color: #384354;
 }
-.second h5{
+
+.second h5 {
     text-align: center;
     margin: 10px 400px;
 }
-.second input{
+
+.second input {
     height: 40px;
+    width: 150px;
     text-align: center;
     border: 1px solid #6f707e;
     border-radius: 5px;
     margin-top: 40px;
     color: #6f707e;
     margin-bottom: 60px;
+    transform: scale(1);
 }
-.Third{
+
+.Third {
     width: 100%;
-    background: RGBA(53,85,140,0.45);
+    background: RGBA(53, 85, 140, 0.45);
     float: left;
     margin-bottom: 100px;
 }
-.Third h2{
+
+.Third h2 {
     font-size: 20px;
     margin-top: 90px;
     margin-bottom: 60px;
@@ -103,25 +131,31 @@ nav{
     font-weight: bold;
     color: #384354;
 }
-.img1{
+
+.img1 {
     margin-bottom: 20px;
 }
-.Third li{
+
+.Third li {
     float: left;
     line-height: 30px;
     margin-right: 40px;
     text-align: center;
     padding-bottom: 100px;
+    transition-duration: 1.5s;
 }
-.sp{
+
+.sp {
     color: #d17700;
 }
-.Fourth{
+
+.Fourth {
     float: left;
     margin: 0 360px 0 330px;
-   
+
 }
-.Fourth h2{
+
+.Fourth h2 {
     font-size: 20px;
     text-align: center;
     text-decoration: 4px #d17700 underline;
@@ -130,30 +164,38 @@ nav{
     color: #384354;
     font-weight: bold;
 }
-.p1{
+
+.p1 {
     margin-bottom: 40px;
     text-align: center;
 }
-.opcd{
+
+.opcd {
     text-align: center;
 }
-.c1{
+
+.c1 {
     float: left;
     display: inline;
     margin-left: 330px;
     margin-right: 80px;
 }
-.c1 p{
-    color:#3f495a;
-}
-a{
+
+.c1 p {
     color: #3f495a;
 }
-.c2{
+
+a {
+    color: #3f495a;
+}
+
+.c2 {
     float: left;
     width: 805px;
 }
-.t4{
+
+.t4 {
+    width: 300px;
     border: 1px solid #63b5ae;
     font-size: 20px;
     text-transform: uppercase;
@@ -163,45 +205,57 @@ a{
     padding: 15px 40px;
     text-align: center;
     margin: 20px 1000px 0 330px;
+    transform: scaleX(1);
 }
-.p2{
+
+.p2 {
     font-weight: bold;
     font-size: 20px;
     color: #384354;
 }
-.Fifth{
+
+.Fifth {
     padding-top: 200px;
     width: 100%;
     float: left;
-    margin-left: 650px;
+    
 }
-.Fifth h2{
+
+.Fifth h2 {
+
+    text-align: center;    
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 55px;
     color: #384354;
+    display: block;
 }
-.Fifth h4{
+
+.Fifth h4 {
+    margin-left: 625px;
     text-transform: uppercase;
     font-size: 25px;
     margin-bottom: 25px;
 }
-.Fifth select{
+
+.Fifth select {
     color: #7d7d7d;
     border: 1px solid #eeeeee;
     margin-bottom: 50px;
-    
+    margin-left: 625px;
     height: 50px;
     width: 500px;
     background-color: #eeeeee;
 }
-.Sixth{
+
+.Sixth {
     float: left;
-    background: RGBA(53,85,140,0.45);
+    background: RGBA(53, 85, 140, 0.45);
     width: 100%;
     text-align: center;
 }
-.Sixth h2{
+
+.Sixth h2 {
     font-size: 20px;
     text-align: center;
     text-decoration: 4px #d17700 underline;
@@ -211,32 +265,42 @@ a{
     color: #384354;
     font-weight: bold;
 }
-.Sixth ul{
+.img1{
+    transform: rotate(0deg);
+    transition-timing-function: ease;
+}
+
+.Sixth ul {
     float: left;
     text-align: center;
-    margin-left: 550px; 
+    margin-left: 550px;
 }
-.Sixth li{
-    float: left;    
+
+.Sixth li {
+    float: left;
     line-height: 30px;
     margin-right: 40px;
     text-align: center;
     padding-bottom: 100px;
 }
-.Sk{
+
+.Sk {
     font-size: 20px;
     text-transform: uppercase;
     color: #323e4f;
     font-weight: bold;
 }
-.Seventh{
+
+.Seventh {
     float: left;
     margin-top: 100px;
     margin-left: 200px;
-    width; 100%;
+    width;
+    100%;
     text-align: center;
 }
-.Seventh h2{
+
+.Seventh h2 {
     font-size: 20px;
     text-align: center;
     text-decoration: 4px #d17700 underline;
@@ -246,82 +310,95 @@ a{
     color: #384354;
     font-weight: bold;
 }
-#otz{
+
+#otz {
     color: #243042;
     margin-bottom: 100px;
 }
-.mih{
+
+.mih {
     font-size: 15px;
     font-weight: bold;
 }
-.foot{
-    float:left;
+
+.foot {
+    float: left;
     width: 100%;
     background-color: #434e5f;
     text-align: center;
 }
-.foot h2{
+
+.foot h2 {
     font-size: 20px;
     text-align: center;
     text-decoration: 4px #d17700 underline;
     text-transform: uppercase;
-    padding-top: 100px;
+    margin-top: 100px;
     margin-bottom: 40px;
     color: #ffffff;
     font-weight: bold;
 }
-.foot p{
-   color: #ffffff;
+
+.foot p {
+    color: #ffffff;
     margin-bottom: 30px;
 }
-.foot ul{
+
+.foot ul {
     float: left;
     text-align: center;
-    margin-left: 620px; 
+    margin-left: 620px;
 }
+
 .foot li {
-    
-    float: left;    
+
+    float: left;
     line-height: 30px;
     margin-right: 40px;
     text-align: center;
     padding-bottom: 100px;
     color: #fff;
 }
+
 .fot {
     width: 100%;
     text-align: center;
     float: left;
 }
-.fot h4{
+
+.fot h4 {
     margin-bottom: 30px;
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
 }
-.fot input{
+
+.fot input {
     background-color: #d2d6dc;
     margin: 0 5px 0 5px;
     margin-bottom: 15px;
     height: 25px;
     width: 350px;
 }
-.fot textarea{
+
+.fot textarea {
     margin-left: 486px;
     display: block;
     background-color: #d2d6dc;
     width: 715px;
     margin-bottom: 30px;
 }
-.send{
+
+.send {
     float: center;
     width: 100%;
     text-align: center;
     color: #434e5f;
     border: 1px solid #fff;
     border-radius: 5px;
-    padding: 10px 10px;
-    height: 40px;
+    padding: 10px 10px ;
+    height: 15px;
     background-color: none;
+    transform: scale(1);
 
 }

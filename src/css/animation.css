@@ -1,0 +1,54 @@
+.menu li a {
+    transition: all 0.1s;
+    display: inline-block;
+    transform: scale(1);
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a:hover {
+    color: orange;
+
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+.ttl_cont input:active {
+    transform: scale(1.1);
+}
+
+.ttl_cont input:hover {
+    color: darkblue;
+}
+
+.second input:active {
+    transform: scale(1.1);
+}
+.Third li:nth-child(even):hover{
+    background-color: #0000FB;
+}
+
+.Third li:nth-child(odd):hover{
+    background-color: #C100FB;
+}
+h2:hover{
+    transform: scale(1.1);
+}
+.t4:active{
+    transform: scaleX(1.1);
+}
+.Fifth select:hover{
+    color: black;
+}
+.img1:hover{
+    transform: rotate(180deg);
+    transition-duration: 2s;
+}
+.send:active{
+    transform: scale(1.1);
+}
+
