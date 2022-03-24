@@ -4,79 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <title>Урок 2 - HTML</title>
-    <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body>
     <header>
-
         <nav>
-            <div class="logo">Андрей Браун</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo">Андрей Браун</div>
+                    </div>
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a class="a" href="#">Обо мне</a></li>
+                                <li><a class="a" href="#">Услуги</a></li>
+                                <li><a class="a" href="#">Кейсы</a></li>
+                                <li><a class="a" href="#">Прайс</a></li>
+                                <li><a class="a" href="#">Отзывы</a></li>
+                                <li><a class="a" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item a1" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item a1" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item a1" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item a1" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item a1" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item a1" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </nav>
 
     </header>
-    <div class="main">
-        <div class="ttl_cont">
-            <h1>Привет <br> Я Андрей Браун</h1>
-            <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
-            <input type="button" value="Обо мне">
-            <input type="button" value="Мои работы">
+    <section class="main">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 mt-5">
+                    <div class="ttl_cont mt-5">
+                        <h1>Привет <br> Я Андрей Браун</h1>
+                        <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
+                        <input type="button" value="Обо мне">
+                        <input type="button" value="Мои работы">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="second">
-        <h2>
-            Обо мне
-        </h2>
-        <p style="text-align: center"><img class="img1" src="img/logoCSS.png" alt="" width="200px" height="200px"></p>
-        <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
-        </h5>
-        <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
-        </h5>
-        <a href="#"><input type="button" value="Скачать резюме"></a>
-    </div>
-    <div class="Third">
+
+    </section>
+    <section class="second">
+        <div class="container">
+            <div class="row justify-content-center text-center mt-5">
+                <div class="col-xxl-8 mt-5">
+                    <h2 class="offset-5 col-2 mt-5">
+                        Обо мне
+                    </h2>
+                    <p style="text-align: center"><img class="img1" src="img/logoCSS.png" alt="" width="200px" height="200px"></p>
+                    <h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                    </h5>
+                    <h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                    </h5>
+                    <a href="#"><input type="button" value="Скачать резюме"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="Third">
         <h2>Что я умею</h2>
         <ul>
-            <li><img class="img1" src="img/logoCSS.png" alt="" width="50px" height="50px"><br><span class="sp">Веб-Дизайн</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu</li>
-            <li><img class="img1" src="img/logoCSS.png" alt="" width="50px" height="50px"><br><span class="sp">Разработка</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu</li>
-            <li><img class="img1" src="img/logoCSS.png" alt="" width="50px" height="50px"><br><span class="sp">СЕО-опттмизация</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu</li>
-            <li><img class="img1" src="img/logoCSS.png" alt="" width="50px" height="50px"><br><span class="sp">Маркетинг</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu</li>
+            <li>
+                <i class="fa fa-desktop custom" aria-hidden="true"></i><br><br>
+                <span class="sp">Веб-Дизайн</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu
+            </li>
+            <li>
+                <i class="fa fa-keyboard-o custom" aria-hidden="true"></i><br><br>
+                <span class="sp">Разработка</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu
+            </li>
+            <li>
+                <i class="fa fa-code custom" aria-hidden="true"></i><br><br>
+                <span class="sp">СЕО-опттмизация</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu
+            </li>
+            <li>
+                <i class="fa fa-cloud custom" aria-hidden="true"></i><br><br>
+                <span class="sp">Маркетинг</span> <br> Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu
+            </li>
         </ul>
-    </div>
-    <div class="Fourth">
-        <h2>Кейсы</h2>
-        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
-        <div class="opcd"><img src="img/oc.jpg" alt=""width="1024px" height="768px"></div>
-    </div>
-    <span class="c1">
-        <p class="p2">Client:</p><br>
-        <p>Какая-то компания
-        <p><br>
-        <p class="p2">Website:</p><br>
-        <a>http://www.qwerty.com</a>
-    </span>
-    <div class="c2">
-        <p class="p2">Название проекта</p><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-    </div>
-    <input class="t4" type="button" value="Vizit live site">
+    </section>
+    <section class="Fourth">
+        <div class="container mt-5">
+            <div class="row text-center">
+                <div class="col-12 mt-5">
+                    <h2>Кейсы</h2>
+                    <p class="p1 mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+                    <div class="opcd"><img class="mt-5 col-xxl-10 col-xl-9 col-lg-8 col-md-7" src="img/oc.jpg" alt="" width="1024px" height="768px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="class1">
+        <div class="bblock"><span>Client:</span>
+            <p>Какая-то компания</p>
+            <span>Website:</span>
+            <p>http://www.qwerty.com</p>
+        </div>
+        <div class="bblock b1"> <span>Название проекта:</span>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        </div>
+
+    </div><input class="t4" type="button" value="Vizit live site">
     <div class="Fifth">
         <h2>Расчет стоимости</h2>
         <h4>Тип сайта</h4>
@@ -100,7 +155,12 @@
             <option value="Opt2">Пункт2</option>
             <option value="Opt3">Пункт3</option>
         </select>
-
+        <hr>
+        <div class="block">
+            <p>Сроки <span class="span">0</span></p>
+            <p>Стоимость <span class="span">0</span></p>
+        </div>
+        <input class="t5" type="button" value="Оставить заявку">
     </div>
     <div class="Sixth">
         <h2>Немного статистики</h2>
@@ -111,20 +171,26 @@
             <li><img class="img1" src="img/logoCSS.png" alt="" width="50px" height="50px"><br><span class="Sk">23</span><br>Наград получено</li>
         </ul>
     </div>
-    <div class="Seventh">
-        <h2>Отзывы</h2>
-        <p style="text-align: center"><img src="img/logoCSS.png" alt="" width="150px" height="150px"></p><br>
-        <p id="otz">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.<br>
-            <br>
-            <br>
-            <span class="mih">Михаил</span>, Ген. директор ПАО"Газпром"
-        </p>
-    </div>
+    <section class="Seventh">
+        <div class="contaier">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Отзывы</h2>
+                    <p style="text-align: center"><img src="img/logoCSS.png" alt="" width="150px" height="150px"></p><br>
+                    <p class="pp2" id="otz">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.<br>
+                        <br>
+                        <br>
+                        <span class="mih">Михаил</span>, Ген. директор ПАО"Газпром"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="foot">
-            <h2>Мои контакты</h2>
+            <h2>Мои контакты</h2><br>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -135,13 +201,21 @@
             </ul>
             <div class="fot">
                 <h4>Оставте мне сообщение</h4>
-                <input type="text" name="text_name" placeholder="Введи имя">
-                <input type="text" name="text_email" placeholder="Введи email"><br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                <div class="ft">
+                    <input class="i1" type="text" name="text_name" placeholder="Введи имя">
+                    <input class="i2" type="text" name="text_email" placeholder="Введи email">
+        
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                    
+                </div>
                 <input class="send" type="button" value="Отправить">
             </div>
         </div>
     </footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

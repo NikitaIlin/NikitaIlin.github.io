@@ -1,54 +1,52 @@
-.menu li a {
-    transition: all 0.1s;
-    display: inline-block;
-    transform: scale(1);
+.a{
+    color: #fff;
 }
 
-.menu li a:visited {
+.a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.a:hover{
+    color: #eb7800;
+    transition: 0.3s;
+  
+}
+.a:active{
+    font-size: 16px;
+    transition: 0.1s;
+}
+.white-btn:visited{
     color: white;
 }
-
-.menu li a:hover {
-    color: orange;
-
+.a1{
+    color: #000;
+    transform: scale(1);
 }
-
-.menu li a:active {
+.a1:hover{
+    color: #eb7800;
+}
+.a1:active{
+    color: #eb7800;
+    background: none;
     transform: scale(1.1);
 }
-
-.ttl_cont input:active {
+.ttl_cont input:active{
     transform: scale(1.1);
+    transition-duration: .2s;
 }
-
-.ttl_cont input:hover {
-    color: darkblue;
-}
-
-.second input:active {
+.second input:active{
     transform: scale(1.1);
-}
-.Third li:nth-child(even):hover{
-    background-color: #0000FB;
-}
-
-.Third li:nth-child(odd):hover{
-    background-color: #C100FB;
-}
-h2:hover{
-    transform: scale(1.1);
+    transition-duration: .2s;
 }
 .t4:active{
-    transform: scaleX(1.1);
+    transform: scale(1.1);
+    transition-duration: .2s;
 }
-.Fifth select:hover{
-    color: black;
-}
-.img1:hover{
-    transform: rotate(180deg);
-    transition-duration: 2s;
+.t5:active{
+    transform: scale(1.1);
+    transition-duration: .2s;
 }
 .send:active{
     transform: scale(1.1);
+    transition-duration: .2s;
 }
-
