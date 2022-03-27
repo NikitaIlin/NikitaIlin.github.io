@@ -20,6 +20,8 @@
      transform: scale(1);
      transition: all 0.2s;
      text-align: center;
+     color: #2f4154;
+     text-transform: uppercase;
  }
 
  .logo {
@@ -86,6 +88,9 @@
      transform: scale(1);
      background: none;
  }
+.col-xxl-8 h5 {
+     color: #2f4154;
+}
 
  .second input {
      height: 40px;
@@ -123,8 +128,14 @@
      text-align: center;
      margin: 0 5px;
      padding: 5px 3px;
+     color: #2f4154;
 
 
+ }
+
+ .Third i {
+     color: #2f4154;
+     font-size: 30px;
  }
 
  .sp {
@@ -139,14 +150,16 @@
 
  .class1 {
      display: flex;
-     margin-left: 310px;
+     width: 65%;
+     margin: 0 auto;
      color: #2f4154;
+     justify-content: space-around;
  }
 
  .b1 {
      width: 823px;
      height: 100px;
-     margin-left: 100px;
+     margin-left: 15px;
  }
 
  .class1 span {
@@ -159,11 +172,11 @@
  }
 
  .t4 {
+
      color: white;
      font-size: 20px;
      text-transform: uppercase;
-     margin-top: 40px;
-     margin-left: 310px;
+     margin: 40px auto;
      border: 1px solid #00b6af;
      background-color: #00b6af;
      border-radius: 5px;
@@ -173,20 +186,22 @@
 
  .Fifth {
      width: 100%;
-     
+
  }
-.Fif{
+
+ .Fif {
      width: 25%;
      padding: 50px 40px;
-     margin: 100px 0;
+     margin: 100px auto;
      display: flex;
      flex-direction: column;
      box-shadow: 0 0 15px #e4e4e4;
      min-width: 600px;
-}
+ }
 
  .Fifth h2 {
      color: #102032;
+     margin-bottom: 50px;
  }
 
  .Fifth h4 {
@@ -244,6 +259,7 @@
      margin: 0 5px;
      padding: 5px 3px;
      align-content: space-between;
+     color: #293b4f;
  }
 
  .Sk {
@@ -252,8 +268,9 @@
      color: #102032;
  }
 
- .pp2 {
+ .col-12 p {
      font-size: 18px;
+     color: #293b4f;
  }
 
  .mih {
@@ -267,7 +284,7 @@
      text-align: center;
      color: white;
      padding-bottom: 200px;
-     background: url(../img/Fon.png) 90% 25%/100% 100% no-repeat;
+     background: url(../img/Fon.png) 100% 25%/100% 100% no-repeat;
  }
 
  .foot ul {
@@ -298,50 +315,58 @@
 
  .ft {
      display: flex;
-     margin: 0 550px;
+     margin: 0 auto;
      flex-wrap: wrap;
-     justify-content: space-between;
+     align-content: center;
+     flex-direction: column;
  }
-::placeholder{
-    color: white;
-    
-}
+
+ ::placeholder {
+     color: white;
+
+ }
 
  .ft input {
-     color:white;
+     color: white;
      padding: 0 3px;
      height: 35px;
-     width: 230px;
-     margin-bottom: 10px;
+
+     margin: 0 0 10px 0;
      background-color: #d1d6dd;
      border: 1px solid #d1d6dd;
      background: none;
-}
+ }
+
  .i1 {
      border-radius: 10px 0 0 0;
+     width: 300px;
  }
 
  .i2 {
-     border-radius: 0 10px 0 0;
+     border-radius: 0 0 0 0;
+     width: 450px;
  }
 
  .ft textarea {
      padding: 0 3px;
      font-size: 20px;
      color: white;
-     width: 100%;
+     width: 600px;
      border-radius: 0 0 10px 10px;
      margin-bottom: 20px;
      background-color: #d1d6dd;
      border: 1px solid #d1d6dd;
      background: none;
-     min-width: 25%;
+
  }
-.send{
-    color: white;
-    width: 150px;
-    height: 40px;
-    border: 1px solid #f9fbff;
-    border-radius: 5px;
-    background: none;    
-}
+
+ .send {
+     color: white;
+     margin: 0 auto;
+     width: 200px;
+     height: 40px;
+     border: 1px solid #f9fbff;
+     border-radius: 5px;
+     background: none;
+
+ }
