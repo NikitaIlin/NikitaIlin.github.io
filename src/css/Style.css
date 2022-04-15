@@ -6,6 +6,9 @@
      font-family: Roboto Slab, Arial, sans-serif;
      width: 100%;
  }
+section{
+    border: 1px solid #fff;
+}
 
  nav {
      float: left;
@@ -15,6 +18,10 @@
      position: fixed;
      z-index: 3;
  }
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
 
  h2 {
      transform: scale(1);
@@ -107,12 +114,12 @@
 
  .Third {
      padding-top: 50px;
-     padding-bottom: 200px;
+     padding-bottom: 270px;
      background: url(../img/dk.png) 90% 25%/100% 100% no-repeat;
  }
 
  .Third h2 {
-     margin: 50px 0 100px 0;
+     margin: 35px 0 200px 0;
  }
 
  .Third ul {
@@ -272,15 +279,19 @@
      font-size: 18px;
      color: #293b4f;
  }
+.Seventh{
+    
+}
 
  .mih {
      font-size: 20px;
      font-weight: bold;
+     margin-bottom: 50px;
  }
 
  .foot {
-     margin-top: 100px;
-     padding-top: 50px;
+    
+     padding-top: 100px;
      text-align: center;
      color: white;
      padding-bottom: 200px;
@@ -370,3 +381,4 @@
      background: none;
 
  }
+

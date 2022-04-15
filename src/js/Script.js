@@ -1,5 +1,23 @@
 "use strict"
-let a = 10000, a1 = 30000, a2 = 40000, b = 10000, b1 = 20000, b2 = 5000, c = 10000, c1 = 15000, c2 = 20000, res, res1;
+$(document).ready(function(){
+    let options = {threshold: [0.2]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.element-animation');
+    elements.each((i, el) => {
+    observer.observe(el);    
+    })
+    
+});
+function onEntry(entry){
+    enrty.forEach(change => {
+            if(change.isIntersectiing){
+                change.target.classList.add('show-animation');
+            }
+    });
+}
+
+
+/*let a = 10000, a1 = 30000, a2 = 40000, b = 10000, b1 = 20000, b2 = 5000, c = 10000, c1 = 15000, c2 = 20000, res, res1;
 
 let type = prompt("Выберите тип сайта: 1 - Визитка, 2 - Интернет магазин, 3 - Корпоративный сайт");{
 
@@ -145,4 +163,4 @@ let adapt = prompt("Адаптивность: 1 - Мобильные устро�
 let cost = prompt("Узнать стоимость? да/нет");
  if (cost ="да" && adapt != 0 ){
      console.log("Стоимость сайта", res1, "рублей.")
- }else console.log("Стоимость сайта" ,res, "рублей.")
+ }else console.log("Стоимость сайта" ,res, "рублей.") */
